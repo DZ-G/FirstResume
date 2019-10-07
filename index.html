@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <script src="./js/jquery-1.11.3.min.js"></script>
+  <script src="js/jquery.transit.js"></script>
+  <link rel="stylesheet" href="./css/swiper.min.css">
+  <link rel="stylesheet" href="./css/animate.min.css">
+  <link rel="stylesheet" href="./css/my.css">
+  <link rel="stylesheet" href="./css/font-awesome.min.css">
+</head>
+
+<body>
+  <!-- 加载动画 -->
+  <div id="loader">
+    <div class="loader-1">
+      <div class="loader-outter"></div>
+      <div class="loader-inner"></div>
+    </div>
+  </div>
+  <!-- 头部固定块 -->
+  <div class="W-head">
+    <a>
+      <img src="images/logo.jpg">
+      <div class="myResume">
+        <span>Elivs</span>
+        <i>'s</i>
+        resume
+      </div>
+      <div class="clear"></div>
+    </a>
+  </div>
+
+  <!--导航条  -->
+  <div class="nav">
+    <div class="first-chirld">
+      <i class="fa fa-home fa-2x"></i>
+    </div>
+
+    <div class="second-chirld">
+      <i class="fa fa-pie-chart fa-2x"></i>
+    </div>
+
+    <div class="third-chirld">
+      <i class="fa fa-server fa-2x"></i>
+    </div>
+    <div class="forth-chirld">
+      <i class="fa fa-envelope-open-o fa-2x"></i>
+
+    </div>
+    <div id="hamburger" class="hamburger" data-rot="180">
+      <div class="line"></div>
+    </div>
+
+  </div>
+
+  <!-- 遮挡块 -->
+  <div class="nav-zhe"></div>
+
+  <!-- 主体内容 -->
+  <div class="swiper-container " id="content">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <div class="w-mask">
+          <div class="slider" style="display: block;">
+            <div class="items-group">
+              <div class="item  active" id="slide">
+                <div class="block" style="transform: scale(1.03) translate(0px, 0px) rotateX(0deg) rotateY(0deg);">
+                  <span class="circleLight"
+                    style="background: radial-gradient(circle at 0px 0px, rgb(255, 255, 255), transparent);"></span>
+                  <div class="text">
+                    <h2>Hello, I'm Elivs</h2>
+                    <strong>We never look back, we just rush forward</strong>
+                    <p class="W-p1">DZ-G</p>
+                    <p class="W-p2">一名前端开发工程师</p>
+                    <p class="W-phone">186740374976</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="bg-img" id="JoynBackground">
+            <img src="images/bg-01.jpg" name="1" style=" display: block;">
+            <img src="images/bg-02.jpg" name="2" style=" display: none;">
+            <img src="images/bg-03.jpg" name="3" style="display: none;">
+            <img src="images/bg-04.jpg" name="4" style="display: none;">
+          </div>
+        </div>
+
+      </div>
+      <div class="swiper-slide"  style="background-image: url(images/05.jpg)">
+        <div class="my-demo">
+          <div class="title">
+            <p class="ani" swiper-animate-effect="bounceInLeft" swiper-animate-duration="0.5s"
+              swiper-animate-delay="0.3s">关于我</p>
+            <hr class="ani" swiper-animate-effect="rubberBand" swiper-animate-duration="0.5s"
+              swiper-animate-delay="0.3s">
+            <span class="ani" swiper-animate-effect="shake" swiper-animate-duration="0.5s"
+              swiper-animate-delay="0.5s">about me</span>
+          </div>
+          <div id="slidorion1">
+            <div id="about_list_content">
+              <div class="about_list" id="about_list1">
+                <div class="about_list_eg" id="about_en_edu">
+                  <i class="fa fa-graduation-cap fa-2x ani" swiper-animate-effect="fadeInUp"
+                    swiper-animate-duration="0.5s" swiper-animate-delay="0.3s"></i>
+                </div>
+                <div class="about_list_cn" id="about_cn_edu">学历<p>本科</p>
+                </div>
+              </div>
+              <div class="about_list">
+                <div class="about_list_eg" id="about_en_age">
+                  <i class="fa fa-user fa-2x ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s"
+                    swiper-animate-delay="0.3s"></i>
+                </div>
+                <div class="about_list_cn" id="about_cn_age">年龄<p>22岁</p>
+                </div>
+              </div>
+              <div class="about_list">
+                <div class="about_list_eg" id="about_en_loc">
+                  <i class="fa fa-street-view fa-2x ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s"
+                    swiper-animate-delay="0.3s"></i>
+                </div>
+                <div class="about_list_cn" id="about_cn_loc">坐标<p>武汉</p>
+                </div>
+              </div>
+              <div class="about_list">
+                <div class="about_list_eg" id="about_en_sta">
+                  <i class="fa fa-book fa-2x ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s"
+                    swiper-animate-delay="0.3s"></i>
+                </div>
+                <div class="about_list_cn animate" id="about_cn_sta">状态<p>在职</p>
+                </div>
+              </div>
+            </div>
+
+            <div id="about_info" style="width: 800px; margin-top: 0px; margin-bottom: 0px;">
+              <p style="bottom: 0px;">2018年毕业于武汉软件工程职业学院，于2018年末拿到本科(非统招)毕业证</p>
+              <p style="bottom: 0px;">就职期间喜欢上了前端的，于是开始前端之旅</p>
+              <p style="bottom: 0px;">致力于提升用户体验</p>
+              <p style="bottom: 0px;">致力于前端开发</p>
+            </div>
+          </div>
+        </div>
+     
+      </div>
+      <div class="swiper-slide" style="background-image: url(images/bg-01.jpeg) ;">
+        <div class="my-demo">
+          <div class="title">
+            <p class="ani" swiper-animate-effect="bounceInLeft" swiper-animate-duration="0.5s"
+              swiper-animate-delay="0.3s">技能掌握</p>
+            <hr class="ani" swiper-animate-effect="rubberBand" swiper-animate-duration="0.5s"
+              swiper-animate-delay="0.3s">
+            <span>Web Skill</span>
+          </div>
+          <div class="progress">
+            <div class="progress-circle first ">
+              <div class="wrapper right">
+                <div class="circleProgress  circle-right animate"></div>
+              </div>
+              <div class="wrapper left">
+                <div class="circleProgress circle-left animate"></div>
+              </div>
+              <div class="progress-title ani" swiper-animate-effect="flash" swiper-animate-duration="0.5s"
+                swiper-animate-delay="0.3s">HTML/CSS</div>
+              <div class="progress-num">0%</div>
+            </div>
+            <div class="progress-circle second ">
+              <div class="wrapper right">
+                <div class="circleProgress circle-right animate"></div>
+              </div>
+              <div class="wrapper left">
+                <div class="circleProgress circle-left animate"></div>
+              </div>
+              <div class="progress-title ani" swiper-animate-effect="flash" swiper-animate-duration="0.5s"
+                swiper-animate-delay="0.3s">JS</div>
+              <div class="progress-num">0%</div>
+            </div>
+            <div class="progress-circle third ">
+              <div class="wrapper right">
+                <div class="circleProgress circle-right animate"></div>
+              </div>
+              <div class="wrapper left">
+                <div class="circleProgress circle-left animate"></div>
+              </div>
+              <div class="progress-title ani" swiper-animate-effect="flash" swiper-animate-duration="0.5s"
+                swiper-animate-delay="0.3s">VUE</div>
+              <div class="progress-num">0%</div>
+            </div>
+            <div class="progress-circle forth ">
+              <div class="wrapper right">
+                <div class="circleProgress circle-right animate"></div>
+              </div>
+              <div class="wrapper left">
+                <div class="circleProgress circle-left animate"></div>
+              </div>
+              <div class="progress-title ani" swiper-animate-effect="flash" swiper-animate-duration="0.5s"
+                swiper-animate-delay="0.3s">NODE</div>
+              <div class="progress-num">0%</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="swiper-slide" style="background-image: url(images/bg-03.jpg)">
+        <div class="my-demo">
+          <div class="title">
+            <p class="ani" swiper-animate-effect="bounceInLeft" swiper-animate-duration="0.5s"
+              swiper-animate-delay="0.3s">个人作品</p>
+            <hr class="ani" swiper-animate-effect="rubberBand" swiper-animate-duration="0.5s"
+              swiper-animate-delay="0.3s">
+            <span>My Demo</span>
+          </div>
+          <div class="my-demo content-demo">
+            <div id="carousel">
+              <img src="images/1.jpg" alt="#" class="">
+              <img src="images/2.jpg" alt="#" class="">
+              <img src="images/3.jpg" alt="#" class="">
+              <img src="images/4.jpg" alt="#" class="">
+              <img src="images/5.jpg" alt="#" class="">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide" style="background-image: url(images/bg-04.jpg)">
+        <div class="my-demo">
+          <div class="title">
+            <p class="ani" swiper-animate-effect="bounceInLeft" swiper-animate-duration="0.5s"
+              swiper-animate-delay="0.3s">联系我</p>
+            <hr class="ani" swiper-animate-effect="rubberBand" swiper-animate-duration="0.5s"
+              swiper-animate-delay="0.3s">
+            <span>Contact Me</span>
+          </div>
+          <div class="contact">
+            <div class="left">
+              <img src="images/yuan.jpg">
+            </div>
+            <div class="right">
+              <p>人的一生充满了未知性</p>
+              <p>未来怎么样我从来不回去管</p>
+              <p>此时努力成为最好的自己</p>
+              <p>彼时做最好的自己</p>
+              <span>do the hardest, be the best</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Add Pagination -->
+    <div class="swiper-pagination content"></div>
+  </div>
+
+  <!-- Swiper JS -->
+  <script src="./js/swiper.min.js"></script>
+  <script src="./js/swiper.animate.min.js"></script>
+  <script src="./js/my.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    $(function () {
+      $(".W-head").css('display', 'none');
+      $("#hamburger").css("display", "none")
+      var loader = $("#loader");
+      window.setTimeout(function () {
+        loader.animate({
+          opacity: 0
+        }, 500)
+        window.setTimeout(function () {
+          loader.css("display", "none");
+          $(".W-head").css("display", "block")
+          $("#hamburger").css("display", "block")
+          $(".bg-img").attr("id", "JoynBackground")
+          bgImg(true)
+          $('#carousel').carousel({ curDisplay: 0, autoPlay: true, interval: 3000 });
+        }, 500)
+      }, 2000);
+      $("#hamburger").click(function () {
+        $(this).toggleClass("is-active");
+        $(".navigation").toggleClass("active")
+        $(".nav-zhe").toggleClass("active")
+        let rot = parseInt($(this).data('rot')) - 180
+        $('.nav').transition({ rotate: rot + "deg" })
+        $(this).data('rot', rot)
+        $(".nav div i").toggleClass("ani");
+      });
+    })
+
+    var swiper = new Swiper('#content', {
+      direction: 'vertical', // 垂直切换选项
+      autoplay: false,
+      mousewheel: true,
+      loop: false, // 循环模式选项
+      // 如果需要分页器
+      pagination: {
+        el: '.content',
+      },
+      on: {
+        init: function () {
+          swiperAnimateCache(this); //隐藏动画元素 
+          swiperAnimate(this); //初始化完成开始动画
+        },
+        slideChangeTransitionEnd: function () {
+          swiperAnimate(this); //每个slide切换结束时也运行当前slide动画
+          //this.slides.eq(this.activeIndex).find('.ani').removeClass('ani'); 动画只展现一次，去除ani类名
+          if (this.activeIndex == 0) {
+          
+          } else if (this.activeIndex == 2) {
+            myAnimate(70, "first")
+            myAnimate(60, "second")
+            myAnimate(60, "third")
+            myAnimate(40, "forth")
+          } else {
+           
+            removeMyAnimate("first")
+            removeMyAnimate("second")
+            removeMyAnimate("third")
+            removeMyAnimate("forth")
+          }
+        }
+      },
+    });
+
+
+
+
+
+
+    // 基于准备好的dom，初始化echarts实例
+
+    // function creatEchatrts() {
+    //   var myChart = echarts.init(document.getElementById('main'));
+
+    //   var dataStyle = {
+    //     normal: {
+    //       label: {
+    //         show: false
+    //       },
+    //       labelLine: {
+    //         show: false
+    //       }
+    //     }
+    //   };
+    //   var placeHolderStyle = {
+    //     normal: {
+    //       color: 'rgba(0,0,0,0)',
+    //       label: {
+    //         show: false
+    //       },
+    //       labelLine: {
+    //         show: false
+    //       }
+    //     },
+    //     emphasis: {
+    //       color: 'rgba(0,0,0,0)'
+    //     }
+    //   };
+    //   option = {
+    //     title: {
+    //       // text: 'Skills',
+    //       subtext: 'web前端',
+    //       x: 'center',
+    //       y: 'center',
+
+    //       itemGap: 0,
+    //       // textStyle: {
+    //       //   color: 'rgba(30,144,255,0.8)',
+    //       //   fontFamily: '微软雅黑',
+    //       //   fontSize: 50,
+    //       //   fontWeight: 'bolder'
+    //       // },
+    //       subtextStyle: {
+    //         fontSize: 35,
+    //         fontWeight: 'bolder',
+    //       }
+    //     },
+    //     // grid: {
+    //     //   x:'50%',
+    //     //   y: 160,
+    //     //   x2:'50%',
+    //     //   y2:'10%',
+
+
+    //     // },
+    //     tooltip: {
+    //       show: true,
+    //       formatter: "{a} <br/> {c}% "
+    //     },
+    //     legend: {
+    //       orient: 'vertical',
+    //       x: 'left',
+    //       y: 'bottom',
+    //       itemGap: 12,
+    //       textStyle: {
+    //         color: "auto",
+    //         fontSize: 15
+    //       },
+    //       data: ['HTML5/CSS3', 'JS', 'Node', 'vue']
+    //     },
+    //     toolbox: {
+    //       show: true,
+    //       feature: {
+    //         mark: {
+    //           show: true
+    //         },
+    //         dataView: {
+    //           show: true,
+    //           readOnly: false
+    //         },
+    //         restore: {
+    //           show: true
+    //         },
+    //         saveAsImage: {
+    //           show: true
+    //         }
+    //       }
+    //     },
+    //     series: [{
+    //       name: 'HTML5/CSS3',
+    //       type: 'pie',
+    //       clockWise: false,
+    //       radius: [175, 200],
+    //       itemStyle: dataStyle,
+    //       data: [{
+    //         value: 60,
+    //         name: 'HTML5/CSS3'
+    //       },
+    //       {
+    //         value: 40,
+    //         name: 'invisible',
+    //         itemStyle: placeHolderStyle
+
+    //       }
+    //       ]
+    //     },
+    //     {
+    //       name: 'JS',
+    //       type: 'pie',
+    //       clockWise: true,
+    //       radius: [150, 175],
+    //       itemStyle: dataStyle,
+    //       data: [{
+    //         value: 60,
+    //         name: 'JS'
+
+    //       },
+    //       {
+    //         value: 40,
+    //         name: 'invisible',
+    //         itemStyle: placeHolderStyle
+
+    //       }
+    //       ]
+    //     },
+    //     {
+    //       name: 'Node',
+    //       type: 'pie',
+    //       clockWise: false,
+    //       radius: [125, 150],
+    //       itemStyle: dataStyle,
+    //       data: [{
+    //         value: 50,
+    //         name: 'Node'
+    //       },
+    //       {
+    //         value: 50,
+    //         name: 'invisible',
+    //         itemStyle: placeHolderStyle
+    //       }
+    //       ]
+    //     },
+    //     {
+    //       name: 'vue',
+    //       type: 'pie',
+    //       clockWise: true,
+    //       radius: [100, 125],
+    //       itemStyle: dataStyle,
+    //       data: [{
+    //         value: 45,
+    //         name: 'vue'
+    //       },
+    //       {
+    //         value: 65,
+    //         name: 'invisible',
+    //         itemStyle: placeHolderStyle
+    //       }
+    //       ]
+    //     }
+    //     ]
+    //   };
+
+
+    //   myChart.setOption(option);
+    // }
+  </script>
+</body>
+
+</html>
